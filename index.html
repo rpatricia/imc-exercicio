@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header><h1>ÍNDICE DE MASSA CORPÓREA</h1></header>
+    <main>
+      <div class="title">
+        <h2> Calculadora - IMC </h2>
+      </div>
+      <div class="card">
+        <div class="lineInput">
+          <label>Altura:</label>
+          <input autoFocus type="number" id='altura' step="0.01" placeholder="metros">
+        </div>
+        <div class="lineInput">
+          <div class="input">
+            <label>Peso:</label>
+            <input type="number" id='peso' step="0.1" placeholder="kg">
+        </div>
+        </div>
+          <div class="button">
+            <button id='calcular'>Calcular</button>
+          </div>
+          <div class="sum">
+            <div class="result" id='resultado'>Resultado:</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
