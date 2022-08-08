@@ -5,17 +5,19 @@ function imc() {
   let resultado = document.querySelector("#resultado");
 
   if (altura !== "" && peso !== "") {
-    let IMC = (peso / (altura * altura)).toFixed(2)
+    let IMC = (peso / (altura * altura)).toFixed(2);
     let classificacao = "";
-    if (IMC < 17) {
+    if (IMC < 16) {
+      classificacao = "IMC Inválido";
+    } else if (IMC < 17) {
       classificacao = "Muito abaixo do peso";
-    } else if (IMC <18.5) {
+    } else if (IMC < 18.5) {
       classificacao = "Abaixo do peso";
     } else if (IMC < 25) {
       classificacao = "Peso normal";
     } else if (IMC < 30) {
       classificacao = "Acima do peso";
-    } else if (IMC <  35) {
+    } else if (IMC < 35) {
       classificacao = "Obesidade grau I";
     } else if (IMC < 40) {
       classificacao = "Obesidade grau II";
