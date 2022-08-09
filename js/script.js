@@ -32,3 +32,28 @@ function imc() {
 }
 
 calcular.addEventListener("click", imc);
+
+function trocar(elemento) {
+  //Primeira forma de fazer o evento do clique do botão
+
+  // document.getElementById("evento").innerHTML =
+  //   "Obrigadao por passar o mause";
+  elemento.innerHTML = "obrigado por passar o mouse"
+  elemento.style.backgroundColor = "green"
+  elemento.style.cursor = "pointer"
+  elemento.style.color = "white"
+}
+
+function voltar(elemento) {
+  // document.getElementById("evento").innerHTML = "Obrigado por sair";
+  elemento.innerHTML = "Obrigadao por sair"
+  elemento.style.backgroundColor = "grey"
+  elemento.style.color ="white"
+}
+
+function corNormal(elemento) {
+  // document.getElementById("evento").innerHTML = "Passe o mause aqui"
+  elemento.innerHTML = "Passe o mouse aqui"
+  elemento.style.backgroundColor = "#191c2c"
+  elemento.style.color = "#fff"
+}
